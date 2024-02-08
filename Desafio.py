@@ -8,12 +8,10 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
-
+end = 27
 # The ID and range of a sample spreadsheet.
 SAMPLE_SPREADSHEET_ID = "1pWrgNznJTFDDZtGnCytzYFuMuHByvZaA0YjJVTxYD-4"
-SAMPLE_RANGE_NAME = "engenharia_de_software!B4:H27"
-
-end = 27
+SAMPLE_RANGE_NAME = f"engenharia_de_software!B4:H{end}"
 
 def main():
     # Open the console.txt file in write mode
